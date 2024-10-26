@@ -1,6 +1,7 @@
 {
     "userspace_version": "1.1",
     "build_targets": [
-        ["ferris/sweep", "proprietarypenguin"]
+        ["ferris/sweep", "proprietarypenguin"],
+        ["crkbd/rev1", "proprietarypenguin"]
     ]
 }
