@@ -15,8 +15,8 @@
 #define PERMISSIVE_HOLD
 #define PERMISSIVE_HOLD_PER_KEY
 //#define IGNORE_MOD_TAP_INTERRUPT
-#define QUICK_TAP_TERM 
-#define TAPPING_TERM_PER_KEY
+#define QUICK_TAP_TERM 60 
+//#define TAPPING_TERM_PER_KEY
 
 /* Trackball */
 #define SPI_DRIVER SPID1
