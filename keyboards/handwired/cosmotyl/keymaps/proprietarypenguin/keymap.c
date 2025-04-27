@@ -8,8 +8,8 @@ enum custom_keycodes {
 bool set_scrolling = false;
 
 // Modify these values to adjust the scrolling speed
-#define SCROLL_DIVISOR_H 12.0
-#define SCROLL_DIVISOR_V 12.0
+#define SCROLL_DIVISOR_H 24.0
+#define SCROLL_DIVISOR_V 24.0
 
 // Variables to store accumulated scroll values
 float scroll_accumulated_h = 0;
@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y,                                 KC_U, KC_I, KC_O, KC_P,
         LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G,       KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SCLN),
         KC_Z, KC_X, KC_C, KC_V, KC_B,                                       KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH,
-                    MO(5), LT(1,KC_TAB), KC_ENT,                          KC_SPC, LT(2,KC_BSPC), MO(4)
+                    MO(5), LT(1,KC_TAB), KC_ENT,                            KC_SPC, LT(2,KC_BSPC), MO(4)
     ),
 
     [1] = LAYOUT(
@@ -78,28 +78,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [2] = LAYOUT(
         KC_1, KC_2, KC_3, KC_4, KC_5,                   KC_6, KC_7, KC_8, KC_9, KC_0,
-        KC_ESC, KC_NO, KC_TRNS, KC_NO, KC_TRNS,          KC_VOLU, KC_MINS, KC_EQL, KC_LBRC, KC_RBRC,
+        KC_ESC, KC_NO, KC_TRNS, KC_NO, KC_TRNS,         KC_VOLU, KC_MINS, KC_EQL, KC_LBRC, KC_RBRC,
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_VOLD, KC_MPRV, KC_MNXT, KC_TRNS, KC_MPLY,
                       KC_LGUI, MO(3), KC_BSPC,          KC_SPC, KC_TRNS, KC_TRNS
     ),
 
     [3] = LAYOUT(
-        QK_BOOT, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+        QK_BOOT, KC_NO, KC_NO, KC_NO, KC_NO,            KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
                       KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO
     ),
 
     [4] = LAYOUT(
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, KC_DEL,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_QUOTE,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_HOME, KC_END, KC_PGUP, KC_PGDN, KC_ENT,
-                      KC_LGUI, KC_LCTL, KC_NO,          KC_NO, KC_NO, KC_TRNS
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_DEL,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_QUOTE,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_HOME, KC_END, KC_PGUP, KC_PGDN, KC_ENT,
+                      KC_TRNS, KC_TRNS, KC_NO,          KC_NO, KC_NO, KC_TRNS
     ),
 
     [5] = LAYOUT(
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              MS_BTN1, MS_BTN2, MS_BTN3, KC_NO, KC_NO,
-        KC_NO, DRAG_SCROLL, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+        KC_TRNS, DRAG_SCROLL, KC_TRNS, KC_TRNS, KC_NO,  KC_NO, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
 		      KC_TRNS, KC_TRNS, KC_TRNS,	MS_BTN1, MS_BTN2, MS_BTN3
 
