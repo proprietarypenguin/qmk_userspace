@@ -25,10 +25,10 @@ report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
 
         // Assign integer parts of accumulated scroll values to the mouse report
         mouse_report.h = (int8_t)scroll_accumulated_h;
-        // Invert vertical scrolling
-        mouse_report.v = -(int8_t)scroll_accumulated_v;
         // Classic vertical scrolling
-        //mouse_report.v = (int8_t)scroll_accumulated_v;
+	//mouse_report.v = (int8_t)scroll_accumulated_v;
+	// Inverted vertical scrolling
+	mouse_report.v = -(int8_t)scroll_accumulated_v;
 
         // Update accumulated scroll values by subtracting the integer parts
         scroll_accumulated_h -= (int8_t)scroll_accumulated_h;
@@ -62,6 +62,13 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     }
     return state;
 }*/
+
+const uint16_t PROGMEM combo_caps[] = {KC_Z, KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM combo_apos[] = {RALT_T(KC_L), RGUI_T(KC_SCLN), COMBO_END};
+combo_t key_combos[] = {
+    COMBO(combo_caps, CW_TOGG),
+    COMBO(combo_apos, KC_QUOTE), 
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
