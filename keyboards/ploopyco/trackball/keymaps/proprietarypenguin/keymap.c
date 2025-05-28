@@ -20,16 +20,16 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT( /* Base */
         KC_BTN1, KC_BTN3, LT(1, KC_BTN2),
-          LT(2, KC_BTN4), DRAG_SCROLL
+          LT(2, KC_BTN4), DRAG_SCROLL 
     ),
 
     [1] = LAYOUT( /* Copy/paste */
-	KC_TRNS, KC_TRNS, KC_TRNS,
+	KC_TRNS, KC_TRNS, KC_TRNS, 
 	  KC_COPY, KC_PASTE
     ),
 
     [2] = LAYOUT( /* play/pause and forward */
-	KC_MPLY, KC_TRNS, KC_TRNS,
+	KC_MPLY, DPI_CONFIG, KC_TRNS, 
 	  KC_TRNS, KC_BTN5
     ),
 
