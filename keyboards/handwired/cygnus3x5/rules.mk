@@ -1,0 +1,17 @@
+# Build Options
+#   change yes to no to disable
+
+AUDIO_SUPPORTED = no
+RGB_MATRIX_SUPPORTED = no
+RGBLIGHT_SUPPORTED = no
+BOOTMAGIC_ENABLE = yes
+EXTRAKEY_ENABLE = yes
+SPLIT_KEYBOARD = yes
+SERIAL_DRIVER = vendor
+CONSOLE_ENABLE = yes
+CAPS_WORD_ENABLE = yes
+COMBO_ENABLE = yes
+
+# Encoder
+ENCODER_ENABLE = no
+ENCODER_MAP_ENABLE = no
