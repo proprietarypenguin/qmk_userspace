@@ -6,6 +6,11 @@
 
 #define DYNAMIC_KEYMAP_LAYER_COUNT 8
 
+/* Homerow modifiers */
+#define TAPPING_TERM 200
+#define PERMISSIVE_HOLD
+#define PERMISSIVE_HOLD_PER_KEY
+#define QUICK_TAP_TERM 60
 
 /* OLED */
 
