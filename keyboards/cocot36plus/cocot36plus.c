@@ -32,32 +32,32 @@ extern const pointing_device_driver_t pointing_device_driver;
 #ifndef COCOT_CPI_OPTIONS
 #    define COCOT_CPI_OPTIONS { 200, 400, 800, 1600, 3200 }
 #    ifndef COCOT_CPI_DEFAULT
-#       define COCOT_CPI_DEFAULT 3
+#       define COCOT_CPI_DEFAULT 2 
 #    endif
 #endif
 #ifndef COCOT_CPI_DEFAULT
-#    define COCOT_CPI_DEFAULT 3
+#    define COCOT_CPI_DEFAULT 2
 #endif
 
 #ifndef COCOT_SCROLL_DIVIDERS
 #    define COCOT_SCROLL_DIVIDERS { 1, 2, 3, 4, 5, 6 }
 #    ifndef COCOT_SCROLL_DIV_DEFAULT
-#       define COCOT_SCROLL_DIV_DEFAULT 4
+#       define COCOT_SCROLL_DIV_DEFAULT 6
 #    endif
 #endif
 #ifndef COCOT_SCROLL_DIV_DEFAULT
-#    define COCOT_SCROLL_DIV_DEFAULT 4
+#    define COCOT_SCROLL_DIV_DEFAULT 6
 #endif
 
 
 #ifndef COCOT_ROTATION_ANGLE
 #    define COCOT_ROTATION_ANGLE { -90, -75, -60, -45, -30, -15, 0, 15, 30, 45, 60, 75, 90 }
 #    ifndef COCOT_ROTATION_DEFAULT
-#       define COCOT_ROTATION_DEFAULT 3
+#       define COCOT_ROTATION_DEFAULT 6
 #    endif
 #endif
 #ifndef COCOT_ROTATION_DEFAULT
-#    define COCOT_ROTATION_DEFAULT 3
+#    define COCOT_ROTATION_DEFAULT 6
 #endif
 #ifndef COCOT_AUTO_MOUSE_MODE
 #    define COCOT_AUTO_MOUSE_MODE true

@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MS_BTN2 KC_MS_BTN2
 #define MS_BTN3 KC_MS_BTN3
 
-#define COCOT_SCROLL_INV_DEFAULT true 
+#define COCOT_SCROLL_INV_DEFAULT false
 
 const uint16_t PROGMEM combo_caps[] = {KC_Z, KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM combo_apos[] = {RALT_T(KC_L), RGUI_T(KC_SCLN), COMBO_END};
@@ -57,9 +57,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [3] = LAYOUT(
-        QK_BOOT, KC_NO, KC_NO, KC_NO, KC_NO,            KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-        EE_CLR, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+        QK_BOOT, KC_NO, KC_NO, KC_NO, KC_NO,     	RM_TOGG, RM_PREV, RM_NEXT, KC_NO, KC_NO,
+        EE_CLR, KC_NO, KC_NO, KC_NO, KC_NO,     	RM_VALU, RM_HUEU, RM_SATU, RM_SPDU, KC_NO,
+        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,      	RM_VALD, RM_HUED, RM_SATD, RM_SPDD, KC_NO,
                       KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO
     ),
     [4] = LAYOUT(
@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                       KC_TRNS, KC_TRNS, KC_NO,          KC_NO, KC_NO, KC_TRNS
     ),
     [5] = LAYOUT(
-        ROT_L15, ROT_R15, SCRL_MO, CPI_SW, SCRL_SW,             MS_WHLL, MS_WHLD, MS_WHLU, MS_WHLR, MS_ACL0,
+        ROT_L15, ROT_R15, SCRL_MO, CPI_SW, SCRL_SW,     MS_WHLL, MS_WHLD, MS_WHLU, MS_WHLR, MS_ACL0,
         SCRL_IN, KC_TRNS, MS_BTN3, MS_BTN1, MS_BTN2,  	MS_LEFT, MS_DOWN, MS_UP, MS_RGHT, MS_ACL1,
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, MS_ACL2,
 		      KC_TRNS, KC_TRNS, MS_BTN1,	MS_BTN1, MS_BTN2, MS_BTN3
